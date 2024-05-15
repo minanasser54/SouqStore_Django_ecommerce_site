@@ -1,0 +1,26 @@
+.all_products_pagination{
+  margin: 0 auto ;
+}
+
+.login_form{
+  margin: 0 auto;
+}
+
+.profile_img{
+  margin: 0 auto;
+  display: block;
+}
+
+.profile_info{
+  text-align: center;
+}
+
+.order_success_info{
+  text-align: center;
+}
+
+.review_img{
+  text-align: center;
+  height: 150px;
+  width: 170px;
+}

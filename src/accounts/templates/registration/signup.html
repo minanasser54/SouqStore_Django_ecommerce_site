@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block body %}
+{% load static %}
+<main class="mt-5">
+  <div class="container my_naved">
+
+    <form  method="post">
+    {% csrf_token %}
+      {{form}}
+      <button type="submit" class="btn-primary">signup</button>
+    </form>
+  </div>
+</main>
+{% endblock body%}

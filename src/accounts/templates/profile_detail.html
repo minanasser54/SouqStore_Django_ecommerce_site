@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+
+{% block body %}
+{% load static %}
+<div class="container my_naved">
+  <div class="row cico mt-5">
+    <div class="cico">
+
+      <div class="col-md-12">
+        {% if profile.img %}
+          <img class="imgo_hei profile_img" src="{{profile.img.url}}"  alt="Card img cap">
+        {% else %}
+          <img src="{% static 'img/sample.jpg' %}" class="kool_img img-fluid" alt="">
+        {% endif %}
+      </div>
+      <div class="col-md-12 profile_info">
+        <h2>{{profile}}</h2>
+        <h4>{{profile.user.email}}</h4>
+        <h4>{{profile.country}}</h4>
+        <h4>{{profile.address}}</h4>
+      </div>
+    </div>
+  </div>
+</div>
+<hr>
+<div class="container mt-5 mb-5">
+  <div class="row mt-5">
+    <h2 class="p-2 btn-secondary">My Orders</h2>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Order number</th>
+          <th scope="col">Total</th>
+          <th scope="col">Type</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Mark</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Jacob</td>
+          <td>Thornton</td>
+          <td>@fat</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>Larry</td>
+          <td>the Bird</td>
+          <td>@twitter</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+{% endblock body%}
